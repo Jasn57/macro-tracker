@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macro Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Macro Tracker</h1>
+
+        <form id="macro-form">
+            <label for="proteins">Proteins (g):</label>
+            <input type="number" id="proteins" placeholder="Enter proteins" required>
+
+            <label for="fats">Fats (g):</label>
+            <input type="number" id="fats" placeholder="Enter fats" required>
+
+            <label for="carbs">Carbs (g):</label>
+            <input type="number" id="carbs" placeholder="Enter carbs" required>
+
+            <button type="submit">Add Meal</button>
+        </form>
+
+        <h2>Macro Log</h2>
+        <div id="totals">
+            <p>Total Proteins: <span id="totalProteins">0</span> g</p>
+            <p>Total Fats: <span id="totalFats">0</span> g</p>
+            <p>Total Carbs: <span id="totalCarbs">0</span> g</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>

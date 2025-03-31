@@ -1,70 +1,96 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
-    background-color: #14203b;
+    flex-direction: column;
 }
 
 .container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #303030;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1, h2 {
-    color: #494bc4;
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+    width: 90%;
+    max-width: 350px;
     text-align: center;
-}
-
-form {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    gap: 10px;
 }
 
-label {
-    margin: 10px 0 5px;
-}
-
-input[type="text"], input[type="number"] {
-    padding: 8px;
+.title {
     margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.form-container {
+    background-color: #252525;
+    padding: 8px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+input, button {
+    width: 100%;
+    padding: 6px;
+    font-size: 12px;
     border-radius: 4px;
-    border: 1px solid #ffffff;
+    border: none;
+}
+
+input {
+    background-color: #333;
+    color: #fff;
+    outline: none;
 }
 
 button {
-    padding: 10px;
-    background-color: #292a79;
-    color: white;
-    border: none;
-    border-radius: 4px;
+    background-color: #001f85;
+    color: #fff;
     cursor: pointer;
+    padding: 6px;
+    font-size: 12px;
 }
 
 button:hover {
-    background-color: #2f3085;
+    background-color: #012396;
 }
 
-#macroLog {
-    list-style-type: none;
+.expense-container {
+    background-color: #252525;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+ul {
+    list-style: none;
     padding: 0;
 }
 
-#macroLog li {
-   color: white;
-    padding: 10px;
-    background-color: #303030;
-    margin-bottom: 10px;
+li {
+    background-color: #333;
+    padding: 6px;
+    margin: 4px 0;
     border-radius: 4px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
 }
 
-#totals {
-    margin-top: 20px;
-    text-align: center;
-    color: white;
+.total-container {
+    background-color: #252525;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

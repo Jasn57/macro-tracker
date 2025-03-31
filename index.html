@@ -1,36 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>  
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Macro Tracker</title>
+    <title>Expense Tracker</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Macro Tracker</h1>
 
-        <form id="macro-form">
-            <label for="proteins">Proteins (g):</label>
-            <input type="number" id="proteins" placeholder="Enter proteins" required>
+    <h2>Expense Tracker</h2>
+    <input type="text" id="expense-name" placeholder="Expense Name">
+    <input type="number" id="expense-cost" placeholder="Cost">
+    <button onclick="addExpense()">Add Expense</button>
 
-            <label for="fats">Fats (g):</label>
-            <input type="number" id="fats" placeholder="Enter fats" required>
+    <h3>Total: $<span id="total-cost">0</span></h3>
 
-            <label for="carbs">Carbs (g):</label>
-            <input type="number" id="carbs" placeholder="Enter carbs" required>
-
-            <button type="submit">Add Meal</button>
-        </form>
-
-        <h2>Macro Log</h2>
-        <div id="totals">
-            <p>Total Proteins: <span id="totalProteins">0</span> g</p>
-            <p>Total Fats: <span id="totalFats">0</span> g</p>
-            <p>Total Carbs: <span id="totalCarbs">0</span> g</p>
-        </div>
+    <div class="expense-log">
+        <h4>Expense Log:</h4>
+        <ul id="expense-list"></ul>
     </div>
 
-    <script src="script.js"></script> 
+    <script src="script.js"></script>
 </body>
 </html>
